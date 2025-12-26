@@ -10,6 +10,45 @@ body {
 
 /* Header */
 header {
+    header {
+    background-color: pink; /* fallback if logo doesn't load */
+    height: 200px; /* make it taller */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: white;
+    background-image: url('pictures/logo.jpeg'); /* your logo file */
+    background-size: cover; /* scale to fill header */
+    background-position: center; /* center logo */
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: white; /* text color over logo */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* optional shadow for readability */
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
     background-color: #fce4ec; /* light pink */
     padding: 20px;
 }
