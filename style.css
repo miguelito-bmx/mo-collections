@@ -53,3 +53,61 @@ header nav a {
 header nav a:hover {
     text-decoration: underline;
 }
+/* Header container that includes header + welcome section */
+.header-container {
+    background-color: pink; /* pink overlay */
+    background-image: url('pictures/logo.jpeg'); /* logo behind pink */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 50px; /* space for welcome section */
+    position: relative;
+    color: white;
+}
+
+/* Optional semi-transparent overlay */
+.header-container::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(255,192,203,0.6);
+    z-index: 1;
+}
+
+/* Text inside header container sits above overlay */
+.header-container header,
+.header-container #welcome {
+    position: relative;
+    z-index: 2;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
