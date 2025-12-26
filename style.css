@@ -19,7 +19,7 @@ header {
     color: white;
     background-color: pink;
     background-image: url('pictures/logo.jpeg');
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
