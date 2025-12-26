@@ -60,13 +60,47 @@ header nav a:hover {
     text-decoration: underline;
 }
 
-/* Sections */
-section {
-    padding: 30px 20px;
+/* Section Background Images */
+section:nth-of-type(1) {
+    background-image: url('pictures/background (1).webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-section h2 {
-    color: #e91e63;
+section:nth-of-type(2) {
+    background-image: url('pictures/background (7).webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section:nth-of-type(3) {
+    background-image: url('pictures/background (8).webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section:nth-of-type(4) {
+    background-image: url('pictures/background (9).webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section:nth-of-type(5) {
+    background-image: url('pictures/background (10).webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section:nth-of-type(6) {
+    background-image: url('pictures/background (11).webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 ul {
