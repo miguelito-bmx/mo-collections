@@ -135,7 +135,7 @@ footer {
 }
 /* Floating WhatsApp button with message */
 .whatsapp-float {
-    position: fixed;
+    position: fixed;    /*stay in place while scrolling*/
     bottom: 20px;       /* distance from bottom */
     right: 20px;        /* distance from right */
     display: flex;
@@ -148,9 +148,9 @@ footer {
 
 /* WhatsApp icon */
 .whatsapp-float img {
-    width: 60px;        /* icon size */
-    height: 60px;
-    border-radius: 50%;
+    width: 20px;        /* icon size */
+    height: 20px;
+    border-radius: 40%;
     box-shadow: 0 4px 6px rgba(0,0,0,0.3);
     transition: transform 0.2s;
 }
