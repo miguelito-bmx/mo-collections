@@ -133,4 +133,53 @@ footer {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
+/* Floating WhatsApp button with message */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;       /* distance from bottom */
+    right: 20px;        /* distance from right */
+    display: flex;
+    align-items: center;
+    background-color: transparent; /* transparent container */
+    z-index: 1000;      /* stay on top of all elements */
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* WhatsApp icon */
+.whatsapp-float img {
+    width: 60px;        /* icon size */
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+}
+
+/* Zoom effect on hover */
+.whatsapp-float:hover img {
+    transform: scale(1.2);
+}
+
+/* Message bubble */
+.whatsapp-message {
+    background-color: #25D366; /* WhatsApp green */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-right: 10px; /* space between bubble and icon */
+    font-size: 0.9rem;
+    font-weight: bold;
+    white-space: nowrap;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+    opacity: 0; /* hidden by default */
+    pointer-events: none; /* prevent blocking clicks on icon */
+}
+
+/* Show bubble on hover */
+.whatsapp-float:hover .whatsapp-message {
+    opacity: 1;
+    transform: translateX(-10px); /* slight slide effect */
+    pointer-events: auto;
+}
 
